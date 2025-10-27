@@ -31,6 +31,7 @@ typedef struct {
     int count;       // number of items currently on table
     int next_id;     // unique ID for the next produced item
 } shared_table_t;
+```
 ## Explanation
 
 - The producer writes to `buffer[in]`, increments `in` and `count`, and assigns a new item ID.  
